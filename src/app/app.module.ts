@@ -8,12 +8,14 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { InAppLinkDirective } from '../directives/in-app-link/in-app-link';
+import { SanitizeHtmlPipe } from '../pipes/sanitize-html/sanitize-html';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    InAppLinkDirective
+    InAppLinkDirective,
+    SanitizeHtmlPipe
   ],
   imports: [
     BrowserModule,
