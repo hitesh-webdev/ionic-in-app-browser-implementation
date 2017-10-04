@@ -7,5 +7,17 @@
 </ion-header>
 
 <ion-content padding>
+
   <div [innerHTML]="htmlContent | sanitizeHtml"></div>
+  <!-- 
+    <div [innerHTML]=""></div>
+
+    WARNING: calling this method with untrusted user data exposes your application to XSS security risks!
+
+    You should trust the HTML first before injecting it. You have to use the DomSanitizer for such a thing. An <h3> element is considered safe. An <input> or <a> element is not.
+
+  -->
+
+  <p><a in-app-link href="https://www.google.com">Google Link with static attribute</a></p>
+
 </ion-content>

@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  htmlContent: string = 'Implementation of In App Browser. <a href="https://www.google.com">Link to Google</a>';
+  htmlContent: string = 'Implementation of In App Browser (Note - Dynamic attribute addition is not supported in Angular 2). <a href="https://www.google.com">Link to Google</a>';
 
   constructor(public navCtrl: NavController) {}
 
